@@ -1,23 +1,23 @@
 function ft_print_comb()
 {
-    var i = 0;
-    var j = 1;
-    var k = 2;
-    while (i < 7)
+    var n = 0;
+    var h = 1;
+    var t = 2;
+    while (n < 7)
     {
-        while (j < 8)
+        while (h < 8)
         {
-            while (k < 9)
+            while (t < 9)
             {
-                console.log(i, j, k);
+                console.log(n, h, t);
                 k++;
             }
-            j++;
-            k = j + 1;
+            h++;
+            t = h + 1;
         }
-        i++;
-        j = i + 1;
-        k = j + 1;
+        n++;
+        h = n + 1;
+        t = h + 1;
     }
 }
 ft_print_comb();
