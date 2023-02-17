@@ -10,7 +10,7 @@ function ft_print_comb()
             while (t < 9)
             {
                 console.log(n, h, t);
-                k++;
+                t++;
             }
             h++;
             t = h + 1;
