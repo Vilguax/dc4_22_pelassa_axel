@@ -9,7 +9,7 @@ function ft_print_comb()
         {
             while (t < 9)
             {
-                console.log(n, h, t.join(''));
+                console.log(n, h, t);
                 t++;
             }
             h++;
