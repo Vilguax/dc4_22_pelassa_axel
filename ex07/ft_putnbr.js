@@ -8,4 +8,3 @@ function ft_putnbr(n) {
     }
 }
 ft_putnbr(42);
-
