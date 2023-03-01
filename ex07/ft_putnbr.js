@@ -1,10 +1,11 @@
-function ft_putnbr(n) {
-    let nbChiffres = n.toString().length;
-    let max = Math.pow(10, nbChiffres) - 1;
-
-    for (let i = 0; i <= max; i++) {
-        let valeur = i.toString().padStart(nbChiffres, '0');
-        console.log(valeur);
+function ft_putnbr(nb, param = "") {
+    if (nb.length == 0) {
+      console.log(param);
+    } else {
+      for (let i = 0; i < nb.length; i++) {
+        ft_putnbr(nb.slice(0, i) + nb.slice(i + 1), param + nb[i]);
+      }
     }
 }
-ft_putnbr(42);
+
+ft_putnbr("234");
